@@ -28,7 +28,7 @@ Este é um projeto simples e responsivo de **Matriz de Risco 5x5**, feito com HT
 2. Edite localmente ou envie os arquivos diretamente
 3. Acesse pela URL do GitHub Pages:
    ```
-   https://pramoroso.github.io/matriz-de-risco/
+   https://seu-usuario.github.io/matriz-de-risco/
    ```
 
 ## ✨ Visual

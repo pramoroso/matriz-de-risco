@@ -21,8 +21,14 @@ function renderMatriz() {
       if (risco) {
         const cor = corPorNivel(p, i);
         cell.classList.add(cor);
-        cell.innerHTML = risco.titulo + 
-          `<div class="tooltip">${risco.descricao}</div>`;
+        cell.innerHTML = `
+          <div class="risk-title">${risco.titulo}</div>
+          <div class="risk-desc" style="display:none;">${risco.descricao}</div>
+        `;
+        cell.addEventListener('click', () => {
+          const desc = cell.querySelector('.risk-desc');
+          desc.style.display = desc.style.display === 'none' ? 'block' : 'none';
+        });
       }
       matriz.appendChild(cell);
     }

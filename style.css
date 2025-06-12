@@ -27,7 +27,6 @@ form {
   gap: 5px;
   margin-top: 20px;
 }
-
 .cell {
   background-color: #2c2c2c;
   border: 1px solid #444;
@@ -53,4 +52,14 @@ form {
 }
 .cell:hover .tooltip {
   display: block;
+}
+.risk-title {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.risk-desc {
+  font-size: 0.9em;
+  margin-top: 8px;
+  color: #ccc;
 }
