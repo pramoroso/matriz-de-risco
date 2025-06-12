@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matriz de Risco 5x5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo_risk_matrix.png" alt="Logo Matriz de Risco" class="logo"/>
+    <h1>Matriz de Risco – Paulo Amoroso</h1>
+  </header>
+  <main>
+    <section class="form-section">
+      <h2>Adicionar Risco</h2>
+      <form id="riskForm">
+        <input type="text" id="titulo" placeholder="Título do Risco" required />
+        <textarea id="descricao" placeholder="Descrição" required></textarea>
+        <label>Probabilidade:
+          <select id="probabilidade">
+            <option value="1">Muito Baixa</option>
+            <option value="2">Baixa</option>
+            <option value="3">Média</option>
+            <option value="4">Alta</option>
+            <option value="5">Muito Alta</option>
+          </select>
+        </label>
+        <label>Impacto:
+          <select id="impacto">
+            <option value="1">Muito Baixo</option>
+            <option value="2">Baixo</option>
+            <option value="3">Médio</option>
+            <option value="4">Alto</option>
+            <option value="5">Muito Alto</option>
+          </select>
+        </label>
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+    <section>
+      <h2>Matriz</h2>
+      <div id="matriz" class="matriz"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
